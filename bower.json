@@ -1,0 +1,21 @@
+{
+  "name": "book-app",
+  "main": "index.js",
+  "version": "0.0.0",
+  "authors": [
+    "Tejaswi Sagiraju <tejaswi.sagiraju@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "bootstrap": "~3.3.4",
+    "underscore": "~1.8.3"
+  }
+}

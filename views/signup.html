@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    	<title>Site.ly</title>
+     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js'></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+
+<style>
+
+.box {
+	width: 200px;
+	height: 300px;
+    background-color: gray;
+    opacity: 0.5;
+    margin-top: 50px;
+    width: 600px;
+   margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+#phrase-form {
+	width:300px;
+	margin-left: auto;
+    margin-right: auto;
+
+    padding-top: 30px;
+
+}
+
+body h2 {
+  
+ 	font-family: 'Indie Flower', cursive;
+ 	 text-align:center;
+
+}
+
+
+</style>
+
+  </head>
+  <body>
+    <h2>sign up</h2>
+    <div class="box">
+
+
+   <!--<form id="phrase-form">
+      <input name="first name" type="text" class="form-control" id="new-user" placeholder="first name">
+      <input name="last name" type="text" class="form-control" id="new-user" placeholder="last name">
+      <input name="school" class="form-control" placeholder="school">
+      <input name="email" type="text" class="form-control" id="new-user" placeholder="email">
+      <input name="password" class="form-control" placeholder="password">
+      <input name="re-enter password" class="form-control" placeholder="re-enter password">
+        <a href="signup.html"><button type="submit" class="signup">Sign up</button></a> 
+     </form> -->
+
+      <form id="new-user-form" method="POST" action="/signup">
+        <input name="user[first_name]" type="text" class="form-control" id="new-user-firstname" placeholder="first name">
+       <input name="user[last_name]" type="text" class="form-control" id="new-user-lastname" placeholder="last name">
+       <input name="user[school_name]" type="text" class="form-control" id="school" placeholder="school">
+        <input name="user[email]" type="text" class="form-control" id="email" placeholder="email">
+        <input name="user[password]" type="password" class="form-control" id="password" placeholder="password">
+        <input name="user[password_confirmation]" type="password" class="form-control" id="re-enter-password" placeholder="re-enter password">
+        <a href="signup.html"><button type="submit" class="signup">Sign up</button></a> 
+     </form>
+
+
+    
+</div>
+  </body>
+</html>

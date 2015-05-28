@@ -1,0 +1,102 @@
+
+
+ .page-header {
+   
+   padding-left: 30px;
+   font-family: 'Indie Flower', cursive;
+
+ }
+
+
+.container {
+    height: 800px;
+	 background-color: gray;
+}
+header {
+	height: 50px;
+	background-color: black;
+	
+	padding-right: 10px;
+	padding-left: 20px;
+	padding-bottom: 10px;
+	margin: 10px 10px 10px 10px;
+}
+.left-content {
+
+background-color: green;
+padding-left:20px;
+height: 400px;
+overflow-y: auto;
+margin-top: 80px;
+
+
+
+
+
+
+}
+
+.heading {
+
+	background-color: orange;
+	height: 200px;
+	margin-bottom: 20px;
+
+}
+
+.subcontent {
+	width:540px;
+    height:330px;
+    background-color:Gray;
+    overflow-y: scroll;
+    max-width:540px;
+    max-height:330px;
+
+    border-radius: 25px;
+    border: 2px solid #8AC007;
+    padding: 20px; 
+}
+
+.container h1 {
+
+	color: white;
+}
+header h1 {
+
+	padding-top: 5px;
+}
+.col-md-offset-1 {
+
+}
+
+.page-header h1 small {
+	color: black;
+
+}
+
+#search-form {
+   margin-top: 30px;
+
+}
+
+.left-content #add-form{
+   margin-right:auto; 
+   margin-left:auto;
+ 
+
+   padding-top: 30px;
+
+}
+
+
+.container h1 small {
+
+  color: black;
+  padding-left: 30px;
+   font-family: 'Indie Flower', cursive;
+
+}
+
+
+
+

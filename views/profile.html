@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<title>Site.ly</title>
+     
+  <script type='text/javascript' src='/bower_components/jquery/dist/jquery.min.js'></script>
+  <script type="text/javascript" src='/bower_components/underscore/underscore-min.js'></script>
+  <script type='text/javascript' src='/bower_components/bootstrap/dist/js/bootstrap.min.js'></script>
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <!--<link rel="stylesheet" href="/css/main.css"> -->
+
+
+<link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+
+
+
+
+ <script type="text/javascript" src="javascript/app.js"></script>
+
+ <link rel="stylesheet" type="text/css" href="stylesheets/home.css"> 
+
+
+
+    <title>Lib App</title>
+  </head>
+  
+
+  <body>
+  <div class="container" ".col-lg">
+    <div class="page-header">
+  		<h1>BookIt.<small>Welcome, <id="username">Teja</id></small></h1>
+      </div>
+
+	<div class="left-content col-md-5">
+
+    <div class="page-header">
+        <h1>Add a book</h1>
+    </div>
+    <!-- method="POST" action="/profile" -->
+		
+
+    <form id="add-form">
+      <div>
+      <input name="book[book_name]" type="text" class="form-control" id="new-book" placeholder="title of book">
+    </div>
+      <input name="book[author_name]" type="text" class="form-control" id="new-author" placeholder="author name">
+      <button type="submit" class="btn btn-default">Add book</button>
+    </form>
+
+     
+
+ 
+	</div>
+
+	<div class="right-content col-md-6 col-md-offset-1">
+    <div> <h2>Search for books</h2></div>
+		<div class="heading">
+        
+
+
+                <form id="search-form" method="get" action="/search">
+            	<div id="book-name-search">
+                <input name="q" class="span5" type="text"  placeholder="Book title" >
+            </div>
+       
+                <input name="loc" class="span5" type="text"  placeholder="Location: City, State, Zip">
+            
+                <button type="submit" class="btn btn-primary"> <i class="icon-search icon-white">search</i></button>
+            </form>
+      
+
+
+		</div>
+    <div class="title"><h2>Your posts</h2></div>
+		<div class="subcontent">
+      <ul class="list-group" id="booklist-ul">
+       </ul>
+
+
+
+    </div>
+
+      <!-- what the underscore templating here -->
+       
+
+    </div>
+
+	</div>
+  </body>
+
+     <script type="text/template" id="books-template">
+       <% _.each(collection, function(item){ %>
+       <li class='list-group-item'><%= item.book_name %>
+       
+      <span class="label label-default"><%= item.author_name %></span> <% }); %>
+
+     
+     </script> 
+
+
+</html>
+
+
+
+
+
