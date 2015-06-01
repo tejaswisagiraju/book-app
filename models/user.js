@@ -29,8 +29,9 @@ var userSchema = new mongoose.Schema({
                     lowercase:true,
                     required:true,
                   }
-
                   
+
+
                 });
 
 var confirm = function (pswrd, pswrdCon) {
@@ -61,7 +62,11 @@ userSchema.statics.authenticate = function (params, cb) {
     },
 
     function (err, user) {
+      if (user === null) {
+        return cb("invalid username", null);
+      } else {
       user.checkPassword(params.password, cb);
+    }
     });
 };
 
